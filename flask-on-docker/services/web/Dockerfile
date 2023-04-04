@@ -15,4 +15,4 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . /usr/src/app/
 
-ENTRYPOINT ["usr/src/app/entrypoint.sh"]
+ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
