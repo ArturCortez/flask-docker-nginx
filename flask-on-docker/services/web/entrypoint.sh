@@ -12,6 +12,6 @@ then
 
 fi
 
-python manage create_db
+python manage.py create_db
 
 exec "$@"
