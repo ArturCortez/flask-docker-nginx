@@ -14,8 +14,8 @@ class User(db.Model):
     email = db.Column(db.String(128), unique=True, nullable=False)
     active = db.Column(db.Boolean, default=True, nullable=False)
 
-def __init__(self, email):
-    self.email = email
+    def __init__(self, email):
+        self.email = email
 
 
 
