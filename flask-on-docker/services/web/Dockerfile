@@ -15,5 +15,4 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . /usr/src/app/
 
-COPY ./entrypoint.sh /user/src/app/entrypoint.sh
-ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
+CMD ["python manage.py create_db"]
